@@ -19,10 +19,10 @@
   text-align: center;
   margin-bottom: 16px;
   padding: 20px;
-  background: linear-gradient(to right, #0B1C3C, #1E488F);
+  background-image: linear-gradient(301deg, rgba(104, 255, 42, 1) 0%, rgba(18, 18, 18, 1) 95%);
   color: #ffffff;
   border-radius: 8px;
-  max-width: 1200px;
+  max-width: 60%;
   width: 100%;
   max-height: 400px;
   height: 100%;

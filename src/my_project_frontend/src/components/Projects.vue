@@ -30,7 +30,7 @@
     padding: 35px 20px;
     background: #1c1c1e;
     color: #ffffff;
-    max-width: 1200px;
+    max-width: 60%;
     width: 100%;
     border-radius: 8px;
   }
@@ -53,7 +53,7 @@
   }
   .project-card:hover {
     transform: translateY(-5px);
-    border-color: #f39c12;
+    border-color: rgba(104, 255, 42, 1);
     transition: ease-in-out all 0.2s;
   }
   </style>

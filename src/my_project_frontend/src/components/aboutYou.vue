@@ -23,7 +23,7 @@ export default {
   padding: 35px 20px;
   background: #1c1c1e;
   color: #ffffff;
-  max-width: 1200px;
+  max-width: 60%;
   width: 100%;
   border-radius: 8px;
 }

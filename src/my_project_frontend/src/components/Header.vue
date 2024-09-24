@@ -1,12 +1,12 @@
 <script setup>
-    import { ref } from 'vue';
-import { my_project_backend } from 'declarations/my_project_backend/index';
-let greeting = ref('');
+import { ref } from "vue";
+import { my_project_backend } from "declarations/my_project_backend/index";
+let greeting = ref("");
 
 async function handleSubmit(e) {
   e.preventDefault();
   const target = e.target;
-  const name = target.querySelector('#name').value;
+  const name = target.querySelector("#name").value;
   await my_project_backend.greet(name).then((response) => {
     greeting.value = response;
   });
@@ -14,40 +14,43 @@ async function handleSubmit(e) {
 </script>
 
 <template>
-    <img src="/logo2.svg" alt="DFINITY logo" class="icp-img"/>
-    <form action="#" @submit="handleSubmit">
-      <label for="name">Enter your name: &nbsp;</label>
-      <input id="name" alt="Name" type="text" />
-      <button type="submit">Click Me!</button>
-    </form>
-      <header>
-        <h1 id="greeting">{{greeting}}</h1>
-        <h2>Student</h2>
-      </header>
-
+  <img src="/logo2.svg" alt="DFINITY logo" class="icp-img" />
+  <form action="#" @submit="handleSubmit">
+    <label for="name">Enter your name: &nbsp;</label>
+    <input id="name" alt="Name" type="type" />
+    <button type="submit">Click Me!</button>
+  </form>
+  <header>
+    <h1 id="greeting">{{ greeting }}</h1>
+    <h2>Student</h2>
+  </header>
 </template>
 
 <style scoped>
-    .header {
-        text-align: center;
+header {
+  text-align: center;
   margin-top: 16px;
   padding: 85px 20px;
-  background: linear-gradient(to right, #0b1c3c, #1e488f);
+  background-color: rgba(104, 255, 42, 1);
+  background-image: linear-gradient(340deg, rgba(104, 255, 42, 1) 0%, rgba(18, 18, 18, 1) 80%);
   color: #fff;
+  border: 7px #121212 solid;
   border-radius: 48px;
-  max-width: 1200px;
+  max-width: 60%;
+  max-height: 250px;
+  height: 100%;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 32px 6px rgba(30, 72, 143, 1);
-      -moz-box-shadow: 0px 0px 32px 6px rgba(30, 72, 143, 1);
-        box-shadow: 0px 0px 32px 6px rgba(30, 72, 143, 1);
-    }
-    h1 {
-        font-size: 4rem;
-        margin-bottom: 10px;
-    }
-    h2 {
-        font-size: 2rem;
-        color: #a3cfff;
+  -webkit-box-shadow: 0px 0px 32px 6px rgba(104, 255, 42, 1);
+  -moz-box-shadow: 0px 0px 32px 6px rgba(104, 255, 42, 1);
+  box-shadow: 0px 0px 32px 6px rgba(102, 255, 42, 0.775);
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 2rem;
+  color: #a3cfff;
 }
 p {
   font-size: 1.2rem;
@@ -65,6 +68,7 @@ form {
 
 .icp-img {
   margin-top: 16px;
- 
+  max-width: 500px;
+  width: 100%;
 }
 </style>

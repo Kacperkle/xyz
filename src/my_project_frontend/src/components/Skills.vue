@@ -17,6 +17,9 @@ export default {
       skills: [
         "HTML",
         "CSS",
+        "C++",
+        "JAVA",
+        "Blender 3D"
       ],
     };
   },
@@ -26,10 +29,11 @@ export default {
 <style scoped>
 .skills {
   padding: 60px 20px;
-  background: linear-gradient(to right, #0b1c3c, #1e488f);
+  background-image: linear-gradient(301deg, rgba(104, 255, 42, 1) 0%, rgba(18, 18, 18, 1) 95%);
   color: #ffffff;
+  font-size: 17px;
   text-align: center;
-  max-width: 1200px;
+  max-width: 60%;
   width: 100%;
   border-radius: 8px;
 }
@@ -40,7 +44,7 @@ export default {
 }
 .skill {
   background: #ffffff22;
-  border: 1px solid #a3cfff;
+  border: 3px solid #a3cfff;
   padding: 10px 20px;
   margin: 10px;
   border-radius: 8px;
