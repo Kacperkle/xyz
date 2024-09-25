@@ -29,7 +29,7 @@ export default {
 <style scoped>
 .skills {
   padding: 60px 20px;
-  background-image: linear-gradient(301deg, rgba(104, 255, 42, 1) 0%, rgba(18, 18, 18, 1) 95%);
+  background-image: linear-gradient(301deg, rgba(110, 255, 50, 1) 0%, rgb(43, 59, 36) 100%);
   color: #ffffff;
   font-size: 17px;
   text-align: center;

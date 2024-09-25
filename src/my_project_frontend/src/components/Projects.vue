@@ -1,10 +1,12 @@
 <template>
     <section class="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project-card" v-for="project in projects" :key="project.title">
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.description }}</p>
+      <div class="border">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-card" v-for="project in projects" :key="project.title" @click="goToProject(project.route)">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -16,25 +18,31 @@
     data() {
       return {
         projects: [
-          { title: 'Project One', description: 'Description of project one.' },
-          { title: 'Project Two', description: 'Description of project two.' },
-          { title: 'Project Three', description: 'Description of project three.' }
+          { title: 'Project One', description: 'Description of project one.', route: '/Blender' },
+          { title: 'Project Two', description: 'Description of project two.', route: '/C++' },
+          { title: 'Project Three', description: 'Description of project three.', route: '/Html' },
+          { title: 'Project Three', description: 'Description of project three.', route: '/Java' }
         ]
       };
+    },
+    methods: {
+      goToProject(route) {
+        this.$router.push(route);
+      }
     }
   }
   </script>
 
   <style scoped>
   .projects {
-    padding: 35px 20px;
+    padding: 10px 10px;
     background: #1c1c1e;
     color: #ffffff;
     max-width: 60%;
     width: 100%;
     border-radius: 8px;
   }
-  .projects h2 {
+  .border h2 {
     margin-left: 25px;
   }
   .project-list {
@@ -55,5 +63,10 @@
     transform: translateY(-5px);
     border-color: rgba(104, 255, 42, 1);
     transition: ease-in-out all 0.2s;
+  }
+  .border{
+    padding: 35px 20px;
+    border: solid  rgba(104, 255, 42, 1) 5px;
+    border-radius: 10px;
   }
   </style>

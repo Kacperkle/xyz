@@ -15,13 +15,8 @@ async function handleSubmit(e) {
 
 <template>
   <img src="/logo2.svg" alt="DFINITY logo" class="icp-img" />
-  <form action="#" @submit="handleSubmit">
-    <label for="name">Enter your name: &nbsp;</label>
-    <input id="name" alt="Name" type="type" />
-    <button type="submit">Click Me!</button>
-  </form>
   <header>
-    <h1 id="greeting">{{ greeting }}</h1>
+    <h1 id="greeting">Kacper Kleist</h1>
     <h2>Student</h2>
   </header>
 </template>
@@ -32,7 +27,7 @@ header {
   margin-top: 16px;
   padding: 85px 20px;
   background-color: rgba(104, 255, 42, 1);
-  background-image: linear-gradient(340deg, rgba(104, 255, 42, 1) 0%, rgba(18, 18, 18, 1) 80%);
+  background-image: linear-gradient(301deg, rgba(110, 255, 50, 1) 0%, rgb(43, 59, 36) 100%);
   color: #fff;
   border: 7px #121212 solid;
   border-radius: 48px;
@@ -49,7 +44,7 @@ h1 {
   margin-bottom: 10px;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #a3cfff;
 }
 p {
@@ -67,8 +62,8 @@ form {
 }
 
 .icp-img {
-  margin-top: 16px;
-  max-width: 500px;
+  margin-top: 25px;
+  max-width: 450px;
   width: 100%;
 }
 </style>
